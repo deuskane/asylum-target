@@ -43,5 +43,13 @@ begin
     d_i   => '0',
     q_o   => open
     );
+
+  sync2dffrn : entity work.sync2dffrn(rtl)
+  port map (
+    clk_i    => '0',
+    arst_b_i => '0',
+    d_i      => '0',
+    q_o      => open
+    );
   
 end rtl;

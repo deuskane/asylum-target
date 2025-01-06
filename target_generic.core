@@ -29,6 +29,7 @@ filesets:
     files:
       - src/cgate.vhd
       - src/sync2dff.vhd
+      - src/sync2dffrn.vhd
     file_type : vhdlSource
 
   #---------------------------------------
