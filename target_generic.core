@@ -27,16 +27,16 @@ filesets:
   files_hdl:
   #---------------------------------------
     files:
-      - src/cgate.vhd
-      - src/sync2dff.vhd
-      - src/sync2dffrn.vhd
+      - hdl/cgate.vhd
+      - hdl/sync2dff.vhd
+      - hdl/sync2dffrn.vhd
     file_type : vhdlSource
 
   #---------------------------------------
   files_sim:
   #---------------------------------------
     files:
-      - sim/src/tb_dummy.vhd
+      - sim/hdl/tb_dummy.vhd
     file_type : vhdlSource
 
 #=========================================
