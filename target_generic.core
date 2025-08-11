@@ -14,10 +14,11 @@ CAPI=2:
 # Revisions  :
 # Date        Version  Author   Description
 # 2025-01-06  1.0.0    mrosiere Created
+# 2025-08-11  1.1.0    mrosiere Add cbufg
 #-----------------------------------------------------------------------------
 
-name        : asylum:target:generic:1.0.0
-description : Set of technology cells into RTL behviour
+name        : asylum:target:generic:1.1.0
+description : Set of technology cells into RTL behaviour
 
 #=========================================
 filesets:
@@ -27,6 +28,7 @@ filesets:
   hdl_generic:
   #---------------------------------------
     files:
+      - hdl/generic/cbufg.vhd
       - hdl/generic/cgate.vhd
       - hdl/generic/sync2dff.vhd
       - hdl/generic/sync2dffrn.vhd
