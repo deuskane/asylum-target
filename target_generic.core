@@ -24,16 +24,16 @@ filesets:
 #=========================================
 
   #---------------------------------------
-  files_hdl:
+  hdl_generic:
   #---------------------------------------
     files:
-      - hdl/cgate.vhd
-      - hdl/sync2dff.vhd
-      - hdl/sync2dffrn.vhd
+      - hdl/generic/cgate.vhd
+      - hdl/generic/sync2dff.vhd
+      - hdl/generic/sync2dffrn.vhd
     file_type : vhdlSource
 
   #---------------------------------------
-  files_sim:
+  sim:
   #---------------------------------------
     files:
       - sim/hdl/tb_dummy.vhd
@@ -48,7 +48,7 @@ targets:
   #---------------------------------------
     description     : Default Target (DON'T RUN)
     filesets        :
-      - files_hdl
+      - hdl_generic
     default_tool    : ghdl
 
   #---------------------------------------
@@ -59,7 +59,7 @@ targets:
     default_tool    : ghdl
     toplevel        : tb_dummy
     filesets_append :
-      - files_sim
+      - sim
     tools :
       ghdl :
         analyze_options : ["-fsynopsys"]
