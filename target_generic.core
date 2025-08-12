@@ -9,7 +9,7 @@ CAPI=2:
 #-----------------------------------------------------------------------------
 # Description: Set of technology cells into RTL behviour
 #-----------------------------------------------------------------------------
-# Copyright (c) 2021
+# Copyright (c) 2025
 #-----------------------------------------------------------------------------
 # Revisions  :
 # Date        Version  Author   Description
@@ -25,7 +25,7 @@ filesets:
 #=========================================
 
   #---------------------------------------
-  hdl_generic:
+  hdl:
   #---------------------------------------
     files:
       - hdl/generic/cbufg.vhd
@@ -38,7 +38,7 @@ filesets:
   sim:
   #---------------------------------------
     files:
-      - sim/hdl/tb_dummy.vhd
+      - sim/src/tb_dummy.vhd
     file_type : vhdlSource
 
 #=========================================
@@ -50,7 +50,7 @@ targets:
   #---------------------------------------
     description     : Default Target (DON'T RUN)
     filesets        :
-      - hdl_generic
+      - hdl
     default_tool    : ghdl
 
   #---------------------------------------
@@ -65,8 +65,3 @@ targets:
     tools :
       ghdl :
         analyze_options : ["-fsynopsys"]
-        run_options     : 
-
-#=========================================
-parameters :
-#=========================================

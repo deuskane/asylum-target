@@ -6,7 +6,7 @@
 -- Author     : Mathieu Rosière
 -- Company    : 
 -- Created    : 2025-01-06
--- Last update: 2025-01-06
+-- Last update: 2025-08-11
 -- Platform   : 
 -- Standard   : VHDL'87
 -------------------------------------------------------------------------------
@@ -28,6 +28,12 @@ end tb_dummy;
 
 architecture rtl of tb_dummy is
 begin
+  
+  cbufg : entity work.cbufg(rtl)
+  port map (
+    d_i   => '0',
+    d_o   => open
+    );
   
   cgate : entity work.cgate(rtl)
   port map (
@@ -51,5 +57,5 @@ begin
     d_i      => '0',
     q_o      => open
     );
-  
+
 end rtl;
