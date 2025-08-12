@@ -1,0 +1,48 @@
+CAPI=2:
+
+#-----------------------------------------------------------------------------
+# Title      : 
+# Project    : Asylum
+#-----------------------------------------------------------------------------
+# File       : target_techmap.core
+# Author     : mrosiere
+#-----------------------------------------------------------------------------
+# Description: Set of technology cells into RTL behviour
+#-----------------------------------------------------------------------------
+# Copyright (c) 2025
+#-----------------------------------------------------------------------------
+# Revisions  :
+# Date        Version  Author   Description
+# 2025-08-11  1.0.0    mrosiere Created
+#-----------------------------------------------------------------------------
+
+name        : asylum:target:techmap:1.0.0
+description : Set of technology cells into RTL behaviour
+
+#=========================================
+filesets:
+#=========================================
+
+  #---------------------------------------
+  target_generic:
+  #---------------------------------------
+    depend:
+      - asylum:target:generic
+
+  #---------------------------------------
+  target_nanoxplore_ng_medium:
+  #---------------------------------------
+    depend:
+      - nanoxplore:target:ng_medium
+
+#=========================================
+targets:
+#=========================================
+
+  #---------------------------------------
+  default: &default
+  #---------------------------------------
+    description     : Default Target (DON'T RUN)
+    filesets        :
+      -  "TARGET_NANOXPLORE_NG_MEDIUM ? (target_nanoxplore_ng_medium)"
+      - "!TARGET_NANOXPLORE_NG_MEDIUM ? (target_generic)"
