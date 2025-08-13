@@ -10,7 +10,7 @@ Set of technology cells
 
 # Targets
 
-| Name       | VLNV                          | Flag                        | Description                                         |
-|------------|-------------------------------|-----------------------------|-----------------------------------------------------|
-| generic    | asylum:target:generic         | N/A                         | Inferred Technology Cells                           |
-| ng_medium  | nanoxplore:target:ng_medium   | TARGET_NANOXPLORE_NG_MEDIUM | Technology Cells for FPGA NG_MEDIUM from NanoXplore | 
+| VLNV                          | Flag                        | Description                                         |
+|-------------------------------|-----------------------------|-----------------------------------------------------|
+| asylum:target:generic         | N/A                         | Inferred Technology Cells                           |
+| nanoxplore:target:ng_medium   | TARGET_NANOXPLORE_NG_MEDIUM | Technology Cells for FPGA NG_MEDIUM from NanoXplore | 

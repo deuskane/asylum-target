@@ -7,7 +7,7 @@ CAPI=2:
 # File       : target_techmap.core
 # Author     : mrosiere
 #-----------------------------------------------------------------------------
-# Description: Set of technology cells into RTL behviour
+# Description: Wrapper for technology cells
 #-----------------------------------------------------------------------------
 # Copyright (c) 2025
 #-----------------------------------------------------------------------------
@@ -17,7 +17,7 @@ CAPI=2:
 #-----------------------------------------------------------------------------
 
 name        : asylum:target:techmap:1.0.0
-description : Set of technology cells into RTL behaviour
+description : Wrapper for technology cells
 
 #=========================================
 filesets:

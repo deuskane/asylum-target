@@ -7,7 +7,7 @@ CAPI=2:
 # File       : target_medium.core
 # Author     : mrosiere
 #-----------------------------------------------------------------------------
-# Description: Set of technology cells into RTL behviour
+# Description: Technology Cells for FPGA NG_MEDIUM from NanoXplore
 #-----------------------------------------------------------------------------
 # Copyright (c) 2025
 #-----------------------------------------------------------------------------
@@ -17,7 +17,7 @@ CAPI=2:
 #-----------------------------------------------------------------------------
 
 name        : nanoxplore:target:ng_medium:1.0.0
-description : Set of technology cells into RTL behaviour
+description : Technology Cells for FPGA NG_MEDIUM from NanoXplore
 
 #=========================================
 filesets:

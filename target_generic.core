@@ -7,7 +7,7 @@ CAPI=2:
 # File       : target_generic.core
 # Author     : mrosiere
 #-----------------------------------------------------------------------------
-# Description: Set of technology cells into RTL behviour
+# Description: Inferred Technology Cells
 #-----------------------------------------------------------------------------
 # Copyright (c) 2025
 #-----------------------------------------------------------------------------
@@ -18,7 +18,7 @@ CAPI=2:
 #-----------------------------------------------------------------------------
 
 name        : asylum:target:generic:1.1.0
-description : Set of technology cells into RTL behaviour
+description : Inferred Technology Cells
 
 #=========================================
 filesets:
