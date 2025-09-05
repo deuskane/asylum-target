@@ -27,6 +27,7 @@ filesets:
   hdl:
   #---------------------------------------
     files:
+      - hdl/generic/techmap_pkg.vhd
       - hdl/ng_medium/cbufg.vhd
       - hdl/generic/cgate.vhd
       - hdl/generic/sync2dff.vhd
