@@ -33,7 +33,8 @@ filesets:
       - hdl/generic/cgate.vhd
       - hdl/generic/sync2dff.vhd
       - hdl/generic/sync2dffrn.vhd
-    file_type : vhdlSource
+    file_type    : vhdlSource
+    logical_name : asylum
 
 #=========================================
 targets:

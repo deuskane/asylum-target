@@ -22,8 +22,8 @@
 library IEEE;
 use     IEEE.STD_LOGIC_1164.ALL;
 use     IEEE.numeric_std.ALL;
-library work;
-use     work.techmap_pkg.all;
+library asylum;
+use     asylum.techmap_pkg.all;
 
 entity tb_dummy is
 end tb_dummy;
